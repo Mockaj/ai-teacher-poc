@@ -1,0 +1,6 @@
+/venv
+/__pycache__/
+output_audio.mp3
+.DS_Store
+other_pages/.DS_Store
+.env
