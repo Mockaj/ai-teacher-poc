@@ -9,7 +9,8 @@ st.header("Bauarbeiten")
 if 'chat_history' not in st.session_state:
     st.session_state['chat_history'] = []
 
-input = st.text_area('Prompt...', key='input')
+input = st.text_area('Prompt...', key='input',
+                     placeholder="Napište 'začít' pro začátek konverzace.")
 submit_button = st.button('Submit', type='primary')
 box = st.empty()
 
