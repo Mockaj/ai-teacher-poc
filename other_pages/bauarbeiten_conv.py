@@ -23,7 +23,7 @@ if text:
     st.write(text)
     st.session_state.chat_history.append(('user', text))
     response = openai_st.stream(
-        model='gpt-4-turbo-preview', prompt=text, box=box, history=history)
+        model='gpt-3.5-turbo', prompt=text, box=box, history=history)
     st.session_state.chat_history.append(('ai', response))
     filename = tts(response)
 
